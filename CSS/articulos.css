@@ -1,0 +1,156 @@
+body {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1 {
+    color: #eee;
+    margin-bottom: 30px;
+}
+.containerArticles {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#charactersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.character {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+}
+
+.character > a {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.character > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.character > img {
+    width: 150px;
+    height: 100px;
+    grid-area: image;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+.header{
+
+    background-color: #172149;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.logo{
+
+    
+    padding: 0 40px;
+    line-height: 80px;
+
+}
+
+#articuloLink{
+
+    color: yellow;
+}
+
+
+
+
+.nav-menu{
+
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    transition: right 0.3s;
+}
+
+.nav-menu-item{
+
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+
+}
+.nav-menu-link{
+    padding:3px 12px;
+    
+}
+
+
+.nav-menu-link:hover{
+    color:yellow;
+    transition: 0.5s;
+}
+
+
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
