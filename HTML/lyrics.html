@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyrics</title>
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/392bca4d30.js" crossorigin="anonymous"></script>
     <script defer src="../JS/index.js"></script>
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/login.js"></script>
     
 </head>
 <body>
@@ -35,12 +38,26 @@
                 <li class="nav-menu-item">
                     <a href="lyrics.html" class="nav-menu-link nav-link pagina">Lyrics</a>
                 </li>
+                <li class="nav-menu-item">
+                    <a href="mailbox.html" class="nav-menu-link nav-link">Mailbox</a>
+                  </li>
                 <!--
                 <li class="nav-menu-item">
                     <a href="Diccionario.html" class="nav-menu-link nav-link">Diccionario</a>
                 </li>
                 -->
-                
+                <!--
+                <li class="nav-menu-item">
+                    <div class="login-container">
+                        <form action="">
+                            <input type="text" placeholder="Username" name="username" id="usernameField">
+                            <input type="text" placeholder="Password" name="psw">
+                            <button type=submit id="loginBtn">Login</button>
+                        </form>
+                    </div>
+
+                </li>
+                -->
             </ul>
         </nav>
         
@@ -54,7 +71,7 @@
             <form autocomplete="off">
                 <div>
 
-                    <input class="busqArticulos" type="text" name="q" placeholder="Seach for articles">
+                    <input class="busqArticulos" type="text" name="q" placeholder="Seach for lyrics">
 
                 </div>
             </form>

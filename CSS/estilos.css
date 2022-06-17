@@ -21,6 +21,7 @@ body{
     left: 0;
 }
 
+
 .nav{
 
     display: flex;
@@ -44,7 +45,31 @@ body{
 
 }
 
+.nav .login-container{
+    float:right;    
+}
 
+.nav input[type=text] {
+    padding:6px;
+    margin-top:8px;
+    font-size:17px;
+    border:none;
+    width:150px;
+}
+
+.nav .login-container button{
+    float: right;
+    /*padding: 6px;*/
+    margin-top: 40px;
+    margin-left:8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    height:20px;
+
+}
 
 .pagina{
     color: yellow;
@@ -374,6 +399,12 @@ width: 300px;
     max-width: 1000px;
     text-align: center;
 }
+.containerComments {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
 
 #charactersList {
     padding-inline-start: 0;
@@ -382,9 +413,31 @@ width: 300px;
     grid-gap: 20px;
 }
 
+#commentList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
 .character {
     list-style-type: none;
     background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+}
+
+.comment {
+    border:medium dashed black;
+    list-style-type: none;
+    background-color: #4C8BF5;
+    color:white;
     border-radius: 3px;
     padding: 10px 20px;
     display: grid;
@@ -414,6 +467,12 @@ width: 300px;
 
 
 
+
+#datosComent{
+
+    margin:50px;
+
+}
 
 
 @media(max-width:768px){
