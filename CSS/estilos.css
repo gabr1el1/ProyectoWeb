@@ -19,6 +19,7 @@ body{
     width: 100%;
     top: 0;
     left: 0;
+    margin-bottom: 50px;
 }
 
 
@@ -41,7 +42,7 @@ body{
 
     
     padding: 0 40px;
-    line-height: 80px;
+    line-height: 60px;
 
 }
 
@@ -280,6 +281,7 @@ background-color: #172149;;
 .busquedas{
 
     display: flex;
+    margin: 50px;
     
 
 }
